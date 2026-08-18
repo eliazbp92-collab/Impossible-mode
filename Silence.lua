@@ -9,6 +9,17 @@ local customModel = ({
     Functions = loadstring(game:HttpGet('https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua'))(),
 }).Functions.LoadCustomInstance"loadstring(game:HttpGet("https://raw.githubusercontent.com/eliazbp92-collab/Impossible-mode/refs/heads/main/Impossiblemoderemakesilence.rbxm"))()"
 
+local function getgithubmodeL(url)
+	if not (writefile and getcustomasset and request) then return nil end
+	local fileName = string.match(url, "([^/]+)$") or "temp_model.rbxm"
+	local response = request({Url = url, Method = "GET"})
+	if response.StatusCode ~= 200 then return nil end
+	writefile(fileName, response.Body)
+	local assetId = getcustomasset(fileName)
+	local success, result = pcall(function() return game:GetObjects(assetId)[1] end)
+	return success and result or nil
+end
+
 if not customModel or typeof(customModel) ~= 'Instance' then
     warn("Silence asset failed to load")
     return
