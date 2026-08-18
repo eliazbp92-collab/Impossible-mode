@@ -1,13 +1,13 @@
 --// Services
+local Camera = workspace.CurrentCamera
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
-local TweenService = game:GetService("TweenService")
 
-local player = Players.LocalPlayer
+local LocalPlayer = Players.LocalPlayer
+local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
+local CurrentRooms = workspace:WaitForChild("CurrentRooms") :: Folder
 
---// Load Asset (Using your requested asset ID)
-local customModel = ({
-    Functions = loadstring(game:HttpGet('https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua'))(),
-}).Functions.LoadCustomInstance"loadstring(game:HttpGet("https://raw.githubusercontent.com/eliazbp92-collab/Impossible-mode/refs/heads/main/Impossiblemoderemakesilence.rbxm"))()"
+local modelsilence = "https://raw.githubusercontent.com/eliazbp92-collab/Impossible-mode/refs/heads/main/Impossiblemoderemakesilence.rbxm"
 
 local function getgithubmodeL(url)
 	if not (writefile and getcustomasset and request) then return nil end
