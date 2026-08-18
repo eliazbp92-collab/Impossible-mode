@@ -46,6 +46,7 @@ local function processEntity(child)
 
 				if blackTrail then
 					blackTrail.Texture = "rbxassetid://390410785"
+					blackTrail.Color = ColorSequence.new(Color3.fromRGB(255, 0, 0))
 				end
 				if particle then
 					particle.Texture = "rbxassetid://103424534547254"
