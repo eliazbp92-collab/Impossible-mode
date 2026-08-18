@@ -26,7 +26,7 @@ if game.Workspace:FindFirstChild("SeekMovingNewClone") or
 end
 
 local Kill = true
-local depthsTer = game:GetObjects("rbxassetid://14623804453") -- Load DepthsTer from the ID
+local depthsTer = game:GetObjects("rbxassetid://131209583147049") -- Load DepthsTer from the ID
 
 -- Match name layout expected by Crucifix Color config
 depthsTer.Name = "Hunger" 
