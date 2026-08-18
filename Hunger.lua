@@ -26,10 +26,10 @@ if game.Workspace:FindFirstChild("SeekMovingNewClone") or
 end
 
 local Kill = true
-local depthsTer = game:GetObjects("https://github.com/eliazbp92-collab/Impossible-mode/raw/main/Place_10959918411_Model_HungerMoving_1787034355.rbxm") -- Load DepthsTer from the ID
+local depthsTer = game:GetObjects("rbxassetid://14623804453") -- Load DepthsTer from the ID
 
 -- Match name layout expected by Crucifix Color config
-depthsTer.Name = "HungerMoving" 
+depthsTer.Name = "Hunger" 
 depthsTer.Parent = game.Workspace
 
 --// Find a valid base part inside the model to shift CFrame on (Silence script logic)
