@@ -458,7 +458,7 @@ local function spawncruxy()
         spawnedOnTable = false
     end
 
-    local masterObjects = game:GetObjects('rbxassetid://11631916882')[1]
+    local masterObjects = game:GetObjects('rbxassetid://12849323184')[1]
     local baseCrucifix = masterObjects.Crucifix
     local baseRepentance = masterObjects.Repentance
 
