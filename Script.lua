@@ -102,7 +102,7 @@ end
 workspace.ChildAdded:Connect(processEntity)
 
 --Crucifix
-   wait(0)
+   wait(125)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/eliazbp92-collab/Impossible-mode/refs/heads/main/Crucifix.lua"))()
 
 -- impaled screech
