@@ -2,7 +2,7 @@ local Creator = loadstring(game:HttpGet("https://pastebin.com/raw/0fSnvfGt"))()
 -- Create entity
 local entity = Creator.createEntity({
     CustomName = "Smiley", -- Custom name of your entity
-    Model = "https://github.com/eliazbp92-collab/Impossible-mode/blob/main/Smiley.rbxm?raw=true", -- Can be GitHub file or rbxassetid
+    Model = "https://github.com/eliazbp92-collab/Impossible-mode/raw/main/Smiley.rbxm", -- Can be GitHub file or rbxassetid
     Speed = 180, -- Percentage, 100 = default Rush speed
     DelayTime = 0, -- Time before starting cycles (seconds)
     HeightOffset = 0,
